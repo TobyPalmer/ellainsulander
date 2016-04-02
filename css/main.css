@@ -1,0 +1,16 @@
+.logo {
+	display: inline-block;
+	float: left;
+}
+
+.float-list li{
+	float: left;
+}
+
+.no-style-list {
+	list-style-type: none;
+}
+
+.menu li {
+	margin-right: 20px;
+}
