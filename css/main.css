@@ -14,3 +14,37 @@
 .menu li {
 	margin-right: 20px;
 }
+
+.menu a {
+	text-decoration: none;
+}
+
+
+/*
+Reset links
+*/
+
+a:link {
+    color:black;
+    text-decoration: none;
+}
+
+a:visited {
+    color:black;
+    text-decoration: none;
+}
+
+a:hover {
+    color:black;
+    text-decoration: none;
+}
+
+a:active {
+    color:black;
+    text-decoration: none;
+}
+
+.menu .selected {
+	text-decoration: underline;
+}
+

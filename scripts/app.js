@@ -1,15 +1,27 @@
+var clearSelected = function() {
+	$('.menu li').removeClass('selected');
+};	
+
 //setup crossroads
 crossroads.addRoute('about', function() {
 	$('.content').load('../views/about.html');
+	clearSelected();
+	$('.about').addClass('selected');
 });
 crossroads.addRoute('contact', function() {
 	$('.content').load('../views/contact.html');
+	clearSelected();
+	$('.contact').addClass('selected');
 });
 crossroads.addRoute('work', function() {
 	$('.content').load('../views/work.html');
+	clearSelected();
+	$('.work').addClass('selected');
 });
 crossroads.addRoute('work/{id}', function(id) {
 	$('.content').load('../views/work/' + id + '.html');
+	clearSelected();
+	$('.work').addClass('selected');
 });
 
 crossroads.routed.add(console.log, console); //log all routes
