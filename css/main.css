@@ -9,6 +9,12 @@ ul, li, p {
     padding: 0;
 }
 
+.header {
+    font-weight: 100;
+    font-size: 12px;
+    margin-bottom: 5%;
+}
+
 p {
     font-size: 12px;
     font-weight: 100;
@@ -41,10 +47,11 @@ h3{
 
 .menu {
     line-height: 40px;
+    padding-left: 10px;
 }
 
 .menu li {
-    margin-right: 20px;
+    margin-right: 50px;
 }
 
 .menu a {
@@ -68,7 +75,7 @@ a:visited {
 
 a:hover {
     color:black;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 a:active {
@@ -116,6 +123,25 @@ img {
 .contactinfo-wrapper, 
 .socialmedia-wrapper {
     margin-top: 15px;
+}
+
+.contactinfo-wrapper,
+.contact-img {
+    padding-left: 10px;
+}
+
+.about-wrapper {
+    bottom: 0;
+    position: absolute;
+}
+
+.icon-wrapper {
+    margin-top: 40px;
+}
+
+.icon-wrapper p {
+    text-align: center;
+   margin-top: 10px;
 }
 
 .work-header {
@@ -198,4 +224,37 @@ img {
     letter-spacing: 0.5px;
 }
 
+
+/*----------------------------------------------------------------------
+10.0 Mellan 768-959px
+----------------------------------------------------------------------*/
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+}
+
+/*----------------------------------------------------------------------
+11.0 Mobil liggande
+----------------------------------------------------------------------*/
+
+@media only screen and (min-width: 551px) and (max-width: 767px) {
+
+}
+
+/*----------------------------------------------------------------------
+12.0 Mobil-stående
+----------------------------------------------------------------------*/
+
+@media only screen and (max-width: 550px) {
+
+.about-wrapper {
+    position: relative;
+}
+
+.one.column {
+    width: 25%;
+    margin-right: 4%;
+    margin-bottom: 4%;
+}
+}
 
