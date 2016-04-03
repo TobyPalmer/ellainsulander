@@ -1,4 +1,13 @@
 
+body {
+    margin-bottom: 150px;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
 .logo {
 	display: inline-block;
 	float: left;
@@ -66,13 +75,25 @@ a:active {
 6.0 Work-page
 ----------------------------------------------------------------------*/
 
-img{
+img {
     max-width:100%;
     margin-left:auto;
     margin-right:auto;
     display:block;
     }
+.socialmedia-img {
+    display:inline-block;
+    margin-left: 3px;
+}
 
+.socialmedia-wrapper {
+    float: right;
+}
+
+.contactinfo-wrapper, 
+.socialmedia-wrapper {
+    margin-top: 15px;
+}
 
 .pic{
     margin: 10px;
