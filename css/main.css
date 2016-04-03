@@ -1,5 +1,6 @@
 body {
     margin-bottom: 150px;
+    margin-top: 30px;
 }
 
 ul, li, p {
@@ -8,6 +9,7 @@ ul, li, p {
 }
 
 .logo {
+    width: 15%;
 	display: inline-block;
 	float: left;
 }
@@ -18,6 +20,10 @@ ul, li, p {
 
 .no-style-list {
 	list-style-type: none;
+}
+
+.menu {
+    line-height: 40px;
 }
 
 .menu li {
