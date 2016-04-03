@@ -1,4 +1,9 @@
 
+ul, li {
+    margin: 0;
+    padding: 0;
+}
+
 .logo {
 	display: inline-block;
 	float: left;
@@ -13,7 +18,7 @@
 }
 
 .menu li {
-	margin-right: 20px;
+    margin-right: 20px;
 }
 
 .menu a {
