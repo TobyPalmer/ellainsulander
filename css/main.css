@@ -49,17 +49,19 @@ a:active {
 	text-decoration: underline;
 }
 
-
-
-.column, 
-.columns {
-    margin: 0;
-}
-
 .popup-gallery a {
     display: block;
     margin: 10px;
 }
+
+/*.row:first-child .pic {
+    margin-left: 0;
+}*/
+
+/*.row:last-child .pic {
+    margin-right: 0;
+}*/
+
 /*----------------------------------------------------------------------
 6.0 Work-page
 ----------------------------------------------------------------------*/
