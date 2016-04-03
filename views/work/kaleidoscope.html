@@ -1,0 +1,37 @@
+<script>
+	$(document).ready(function() {
+		$('.popup-gallery').magnificPopup({
+			delegate: 'a',
+			type: 'image',
+			tLoading: 'Loading image #%curr%...',
+			mainClass: 'mfp-img-mobile',
+			gallery: {
+				enabled: true,
+				navigateByImgClick: true,
+				preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+			},
+			image: {
+				tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+				// titleSrc: function(item) {
+				// 	return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
+				// }
+			}
+		});
+	});
+</script>
+<!-- About
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<div class="row">
+  <div class="one-half column">
+    <h4>Kaleidoscope</h4>
+    <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
+  </div>
+  	<div class="row">
+		<div class="popup-gallery twelve columns">
+			<a href="../../Images/Work/2_Trappan/trappan_tog1.jpg" ><img src="../../Images/Work/2_Trappan/trappan_tog1.jpg" width="40%" height="40%"></a>
+			<a href="../../Images/Work/2_Trappan/trappan_tog2.jpg" ><img src="../../Images/Work/2_Trappan/trappan_tog2.jpg" width="40%" height="40%"></a>
+			<a href="../../Images/Work/2_Trappan/trappan_tog3.jpg" ><img src="../../Images/Work/2_Trappan/trappan_tog3.jpg" width="40%" height="40%"></a>
+			<a href="../../Images/Work/2_Trappan/trappan_tog4.jpg" ><img src="../../Images/Work/2_Trappan/trappan_tog4.jpg" width="40%" height="40%"></a>
+		</div>
+	</div>
+</div>

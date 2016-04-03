@@ -1,3 +1,7 @@
+body {
+    width: 100%;
+}
+
 .logo {
 	display: inline-block;
 	float: left;
