@@ -135,6 +135,12 @@ img {
     position: absolute;
 }
 
+.about-image-text {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+}
+
 .icon-wrapper {
     margin-top: 80px;
 }
@@ -247,14 +253,21 @@ img {
 
 @media only screen and (max-width: 550px) {
 
-.about-wrapper {
-    position: relative;
-}
+    .about-wrapper {
+        position: relative;
+    }
 
-.one.column {
-    width: 25%;
-    margin-right: 4%;
-    margin-bottom: 4%;
-}
+    .one.column {
+        width: 25%;
+        margin-right: 4%;
+        margin-bottom: 4%;
+    }
+    .about-image-text {
+        display: block;
+    }
+
+    .about-image-text img {
+        margin-bottom: 30px;
+    }
 }
 
