@@ -1,0 +1,52 @@
+<script>
+	$(document).ready(function() {
+		$('.popup-gallery').magnificPopup({
+			delegate: 'a',
+			type: 'iframe',
+			tLoading: 'Loading video #%curr%...',
+			mainClass: 'mfp-img-mobile',
+			gallery: {
+				enabled: true,
+				navigateByImgClick: true,
+				preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+			},
+			iframe: {
+			  markup: '<div class="mfp-iframe-scaler">'+
+			            '<div class="mfp-close"></div>'+
+			            '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
+			          '</div>', // HTML markup of popup, `mfp-close` will be replaced by the close button
+
+			  patterns: {
+			    vimeo: {
+			      index: 'vimeo.com/',
+			      id: '/',
+			      src: '//player.vimeo.com/video/%id%?autoplay=1'
+			    }
+			  },
+
+			  srcAction: 'iframe_src', // Templating object key. First part defines CSS selector, second attribute. "iframe_src" means: find "iframe" and set attribute "src".
+			}
+		});
+	});
+</script>
+<!-- About
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<div class="row">
+  <div class="one-half column">
+  	<div class="work-header">
+	    <h3>Ett svinbra land</h3>
+	    <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
+	</div>
+  </div>
+</div>
+
+<div class="vimeo-wrapper popup-gallery">
+	<div class="row">
+		<div class="video one-half column">
+			<a href="https://player.vimeo.com/video/116328817" ><img src="../../Images/Work/1_kaleidoscope/1_kaleidoscope.jpg"></a>
+		</div>
+		<div class="video one-half column">
+			<a href="https://player.vimeo.com/video/116328816" ><img src="../../Images/Work/1_kaleidoscope/1_kaleidoscope.jpg"></a>
+		</div>
+	</div>
+</div>
