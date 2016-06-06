@@ -1,7 +1,7 @@
 body {
     margin-bottom: 150px;
     margin-top: 30px;
-    font-family: 'Roboto Slab', serif; 
+   font-family: 'Roboto Slab', serif; 
 }
 
 ul, li, p {
@@ -10,14 +10,14 @@ ul, li, p {
 }
 
 .header {
-    font-weight: 100;
+    font-weight: 300;
     font-size: 12px;
     margin-bottom: 5%;
 }
 
 p {
     font-size: 12px;
-    font-weight: 100;
+    font-weight: 300;
     text-align: justify;
 
 }
@@ -114,6 +114,8 @@ img {
 .socialmedia-img {
     display:inline-block;
     margin-left: 3px;
+    max-width: 30px;
+    max-height: 30px;
 }
 
 .socialmedia-wrapper {
@@ -143,6 +145,7 @@ img {
 
 .icon-wrapper {
     margin-top: 80px;
+    margin-bottom: 60px;
 }
 
 .icon-wrapper p {
@@ -224,7 +227,7 @@ img {
 .pic h4{
     font-size: 12px;
     color: white;
-    font-weight: 100;
+    font-weight: 300;
     text-align: center;
     margin: 0;
     letter-spacing: 0.5px;
