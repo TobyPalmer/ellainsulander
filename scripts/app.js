@@ -37,3 +37,23 @@ hasher.init(); //start listening for history change
 //update URL fragment generating new history record
 hasher.setHash('work');
 
+// Hamburger menu
+$( ".cross" ).hide();
+$( ".menu" ).hide();
+$( ".hamburger" ).click(function() {
+	$( ".menu" ).slideToggle( "slow", function() {
+		$( ".hamburger" ).hide();
+		$( ".cross" ).show();
+	});
+});
+
+$( ".cross, .menu-item" ).click(function() {
+	$( ".menu" ).slideToggle( "slow", function() {
+		$( ".cross" ).hide();
+		$( ".hamburger" ).show();
+	});
+});
+
+
+
+
