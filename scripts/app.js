@@ -33,9 +33,16 @@ function parseHash(newHash, oldHash){
 hasher.initialized.add(parseHash); //parse initial hash
 hasher.changed.add(parseHash); //parse hash changes
 hasher.init(); //start listening for history change
+console.log(hasher);
 
 //update URL fragment generating new history record
-hasher.setHash('work');
+if(window.location.hash) {
+	// because all hashs start with "#/"
+	hasher.setHash(window.location.hash.substr(2));
+}
+else {
+	hasher.setHash('work');
+}
 
 // Hamburger menu
 $( ".cross" ).hide();

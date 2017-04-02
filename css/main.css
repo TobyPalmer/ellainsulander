@@ -31,6 +31,10 @@ h3{
     margin-bottom: 8px;
 }
 
+footer {
+    margin-top: 50px;
+}
+
 .logo {
     width: 15%;
 	display: inline-block;
@@ -188,7 +192,50 @@ a:active {
 .popup-gallery a {
     display: block;
     margin: 10px;
+}
 
+.popup-gallery a:hover{
+    opacity: 0.6;
+}
+
+#right-arrow {
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-left: 15px solid #000;
+    border-bottom: 15px solid transparent;
+}
+
+#left-arrow {
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-right: 15px solid #000;
+    border-bottom: 15px solid transparent;
+    max-width: 100%;
+}
+
+
+.previous {
+  position:fixed;
+  top:50%;
+  left:5%;
+}
+
+
+.next{
+  position:fixed;
+  top:50%;
+  right:5%;
+}
+
+.about-wrapper  .underline-link {
+    font-weight: 400;
+}
+
+/*Override so that the image cannot go over the side arrows*/
+.mfp-image-holder .mfp-content {
+    max-width: 80%;
 }
 
 /*.row:first-child .pic {
